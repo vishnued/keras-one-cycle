@@ -150,8 +150,8 @@ class OneCycleLR(Callback):
         print("Class:",self)
         self.epochs = self.params['epochs']
         #self.batch_size = self.params['batch_size']
-        self.samples = self.params['samples']
-        self.steps = self.params['steps']
+        #self.samples = self.params['samples']
+        #self.steps = self.params['steps']
 
         if self.steps is not None:
             self.num_iterations = self.epochs * self.steps
