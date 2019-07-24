@@ -146,7 +146,8 @@ class OneCycleLR(Callback):
 
     def on_train_begin(self, logs={}):
         logs = logs or {}
-
+        
+        print("Class:",self)
         self.epochs = self.params['epochs']
         self.batch_size = self.params['batch_size']
         self.samples = self.params['samples']
