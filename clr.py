@@ -67,7 +67,7 @@ class OneCycleLR(Callback):
         self.history = {}
 
         self.epochs = None
-        self.batch_size = None
+        self.batch_size = 64
         self.samples = None
         self.steps = None
         self.num_iterations = None
