@@ -10,7 +10,7 @@ from keras import backend as K
 class OneCycleLR(Callback):
     def __init__(self,
                  num_samples,
-                 batch_size,
+                 batchsize,
                  max_lr,
                  end_percentage=0.1,
                  scale_percentage=None,
@@ -69,7 +69,7 @@ class OneCycleLR(Callback):
         self.history = {}
 
         self.epochs = None
-        self.batch_size = batch_size
+        self.batch_size = batchsize
         self.samples = num_samples
         self.steps = None
         self.num_iterations = None
@@ -149,7 +149,7 @@ class OneCycleLR(Callback):
         
         print("Class:",self)
         self.epochs = self.params['epochs']
-        self.batch_size = self.params['batch_size']
+        #self.batch_size = self.params['batch_size']
         self.samples = self.params['samples']
         self.steps = self.params['steps']
 
